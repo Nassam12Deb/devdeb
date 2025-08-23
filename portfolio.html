@@ -134,7 +134,9 @@
     .nav a {
       color: var(--text-secondary);
       text-decoration: none;
-      padding: var(--space-sm) /* var(--space-md) */;
+      padding: var(--space-sm)
+        /* var(--space-md) */
+      ;
       border-radius: var(--radius-md);
       transition: var(--transition-normal);
       position: relative;
@@ -916,6 +918,7 @@
         opacity: 0;
         transform: translateX(-50px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -927,6 +930,7 @@
         opacity: 0;
         transform: translateX(50px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -934,9 +938,12 @@
     }
 
     @keyframes float {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateY(0px);
       }
+
       50% {
         transform: translateY(-10px);
       }
@@ -950,9 +957,12 @@
     }
 
     @keyframes gradientShift {
-      0%, 100% {
+
+      0%,
+      100% {
         transform: translateX(-50%) rotate(0deg);
       }
+
       50% {
         transform: translateX(50%) rotate(180deg);
       }
@@ -969,7 +979,7 @@
       .contact-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .hero-content {
         grid-template-columns: 1fr;
         gap: var(--space-xl);
@@ -1095,6 +1105,7 @@
 
     /* Accessibilité */
     @media (prefers-reduced-motion: reduce) {
+
       *,
       *::before,
       *::after {
@@ -1339,20 +1350,20 @@
 
         <div class="timeline">
           <div class="timeline-item fade-in">
-            <div class="timeline-date">2021 - 2024</div>
-            <h3 class="timeline-title">Licence en Informatique</h3>
-            <div class="timeline-institution">Université d'Abomey-Calavi, Bénin</div>
+            <div class="timeline-date">2022 - 2025</div>
+            <h3 class="timeline-title">Licence en Système Informatique et Logiciel</h3>
+            <div class="timeline-institution">Institut Universitaire LES COURS SONOU de Parakou, Bénin</div>
             <p class="timeline-description">
-              Formation complète en développement logiciel, bases de données,
-              algorithmes et structures de données. Spécialisation en développement web
-              et mobile avec des projets pratiques utilisant les dernières technologies.
+              Formation complète en développement logiciel, bases de données, algorithmes et structures de données.
+              Spécialisation en développement web et mobile avec des projets pratiques utilisant les dernières
+              technologies.
             </p>
           </div>
 
           <div class="timeline-item fade-in">
-            <div class="timeline-date">2023</div>
+            <div class="timeline-date">2025</div>
             <h3 class="timeline-title">Certification Flutter Developer</h3>
-            <div class="timeline-institution">Formation en ligne - Udemy</div>
+            <div class="timeline-institution">Formation en ligne - D-CLIC</div>
             <p class="timeline-description">
               Certification approfondie en développement d'applications mobiles
               cross-platform avec Flutter et Dart. Maîtrise des widgets,
@@ -1361,24 +1372,23 @@
           </div>
 
           <div class="timeline-item fade-in">
-            <div class="timeline-date">2022</div>
+            <div class="timeline-date">2024</div>
             <h3 class="timeline-title">Stage Développeur Web</h3>
-            <div class="timeline-institution">TechStart Solutions, Cotonou</div>
+            <div class="timeline-institution">Wassangari Labs, Parakou</div>
             <p class="timeline-description">
-              Stage de 6 mois en développement web full-stack. Participation au
-              développement d'applications web responsives avec PHP, MySQL et JavaScript.
-              Expérience en travail d'équipe et méthodologies agiles.
+              Stage de 3 mois en développement web full-stack. Participation au développement d'applications web
+              responsives avec PHP, Bootstrap, MySQL et JavaScript. Expérience en travail d'équipe et méthodologies
+              agiles.
             </p>
           </div>
 
           <div class="timeline-item fade-in">
-            <div class="timeline-date">2019 - 2021</div>
+            <div class="timeline-date">2022</div>
             <h3 class="timeline-title">Baccalauréat Scientifique</h3>
-            <div class="timeline-institution">Lycée Technique de Cotonou</div>
+            <div class="timeline-institution">Collège d'Enseignement Général 1 de Djougou</div>
             <p class="timeline-description">
-              Baccalauréat série C (Mathématiques et Sciences Physiques) avec mention Bien.
-              Développement de l'esprit logique et analytique, bases solides en mathématiques
-              et sciences appliquées.
+              Baccalauréat série D (Mathématiques, Biologie et Sciences Physiques-Chimies) avec mention Passable.
+              Développement de l'esprit logique et analytique, bases solides en mathématiques et sciences appliquées.
             </p>
           </div>
         </div>
@@ -1409,13 +1419,16 @@
             <div class="certification-footer">
               <div class="certification-status">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
+                  <path
+                    d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
                 </svg>
                 Certifié
               </div>
-              <a href="https://drive.google.com/file/d/EXEMPLE_ID_1/view" target="_blank" rel="noopener noreferrer" class="btn-certificate">
+              <a href="https://drive.google.com/file/d/EXEMPLE_ID_1/view" target="_blank" rel="noopener noreferrer"
+                class="btn-certificate">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
                 Voir l'attestation
               </a>
@@ -1437,13 +1450,16 @@
             <div class="certification-footer">
               <div class="certification-status">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
+                  <path
+                    d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
                 </svg>
                 Certifié
               </div>
-              <a href="https://drive.google.com/file/d/EXEMPLE_ID_2/view" target="_blank" rel="noopener noreferrer" class="btn-certificate">
+              <a href="https://drive.google.com/file/d/EXEMPLE_ID_2/view" target="_blank" rel="noopener noreferrer"
+                class="btn-certificate">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
                 Voir l'attestation
               </a>
@@ -1465,13 +1481,16 @@
             <div class="certification-footer">
               <div class="certification-status">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
+                  <path
+                    d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z" />
                 </svg>
                 Certifié
               </div>
-              <a href="https://drive.google.com/file/d/EXEMPLE_ID_3/view" target="_blank" rel="noopener noreferrer" class="btn-certificate">
+              <a href="https://drive.google.com/file/d/EXEMPLE_ID_3/view" target="_blank" rel="noopener noreferrer"
+                class="btn-certificate">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                  <path
+                    d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
                 </svg>
                 Voir l'attestation
               </a>
